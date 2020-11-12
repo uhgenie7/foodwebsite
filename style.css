@@ -111,6 +111,24 @@ header {
   transition: opacity 0.5s;
 }
 
+.nav-item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--second-font-color);
+}
+
 .open .fa-times {
   display: block;
 }
@@ -128,20 +146,109 @@ header {
   transform: scale(1);
 }
 
-.nav-item {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+/*hero*/
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("img/main_img.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-.nav-link {
-  display: block;
-  color: #fff;
+.sub-headline {
+  font-size: 8.5rem;
+  font-family: var(--second-font);
+  color: var(--second-font-color);
+  font-weight: 100;
+  line-height: 0.4;
+  letter-spacing: 2px;
+}
+
+.first-letter {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 10.3rem;
+}
+
+.headline {
+  color: #fff;
+  font-size: 3.8rem;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  margin-top: 0.4rem;
+  margin-right: -0.5rem;
+}
+
+.speparator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 100%;
+  max-width: 16rem;
+  height: 0.25rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.line-right::before,
+.line-left::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.6rem solid transparent;
+}
+
+.line-right::before {
+  border-right-color: white;
+  right: 0;
+}
+
+.line-left::before {
+  border-left-color: white;
+  left: 0;
+}
+
+.asterisk {
+  font-size: 1.2rem;
+  color: var(--second-font-color);
+  margin: 0 1.6rem;
+}
+
+.headline-description h5 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: -2px;
-  transition: color 0.5s;
 }
 
-.nav-link:hover {
-  color: var(--second-font-color);
+.cta-btn {
+  font-size: 1.1rem;
+  background-color: white;
+  padding: 0.9rem 1.8rem;
+  color: var(--body-font-color);
+  border-radius: 0.4rem;
+  transition: background-color 0.5s;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  color: #fff;
+  background-color: var(--second-font-color);
 }
